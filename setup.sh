@@ -12,6 +12,7 @@ R () {
 		printf "\n Seccessfully install phonia\n\n"
 		R
 		printf "\n Now you can use :- phonia\n"
+		fi
 		}
 	ins() {
 		R
