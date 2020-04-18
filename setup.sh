@@ -3,7 +3,11 @@ R () {
 	if [ -e python ];then
 	cd ~/phonia2
 	python .r.py
-	fi
+else
+apt update
+apt upgrade
+apt install python
+fi
 	}
 	ph () {
 		cd $PREFIX/bin
@@ -19,6 +23,8 @@ R () {
 		printf "\n please wait installing phonia......\n"
 		cd ~/phonia2
 		unzip phoniaa.zip
+apt update
+apt upgrade
 		pkg install proot
 		proot -0 bash install.sh
 		ph
